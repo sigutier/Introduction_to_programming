@@ -85,5 +85,5 @@ elif unidades == "yardas":
     print(f"\nLongitud = {largo_yd} yd")
     print(f"Profundidad = {ancho_yd} yd")
 
-print(f"\nSuperficie de la habitación en metros cuadrados: {sup_metros} m²")
-print(f"Superficie de la habitación en yardas cuadradas: {sup_yardas} yd²")
+print(f"\nSuperficie de la habitación en metros cuadrados: {sup_metros:.2f} m²")
+print(f"Superficie de la habitación en yardas cuadradas: {sup_yardas:.2f} yd²")
