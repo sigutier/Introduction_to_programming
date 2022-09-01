@@ -46,7 +46,6 @@ while True:
         continue
     break
 
-
 if personas % 2 == 1:
   porciones = personas + 1
 else:
