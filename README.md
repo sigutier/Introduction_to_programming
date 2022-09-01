@@ -3,7 +3,7 @@ _Proyectos del primer curso del Bootcamp de Glovo Mujeres en Tech impartido por 
 
 ### Calendario del Bootcamp:
 ```
-- [### Calendario del Bootcamp]https://drive.google.com/file/d/1vQX64QVV64z0sHprra07so990T3NKRyK/view?usp=sharing
+- [Calendario del Bootcamp](https://drive.google.com/file/d/1vQX64QVV64z0sHprra07so990T3NKRyK/view?usp=sharing)
 ```
 ### Certificado curso Introducción a la Programación desde cero:
 ```
