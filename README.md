@@ -8,6 +8,6 @@ https://github.com/sigutier/KeepCoding_Introduccion_a_la_programacion/blob/maste
 ### Certificado Curso de Introducción a la Programación desde cero:
 
   <p align="center">
-  <img src=
+  <img src= "https://raw.githubusercontent.com/sigutier/KeepCoding_Introduccion_a_la_programacion/master/contenido%20curso%201.png">
   </p>
   
