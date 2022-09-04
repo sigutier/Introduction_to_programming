@@ -10,4 +10,10 @@ https://github.com/sigutier/KeepCoding_Introduccion_a_la_programacion/blob/maste
   <p align="center">
   <img src= "https://raw.githubusercontent.com/sigutier/KeepCoding_Introduccion_a_la_programacion/master/contenido%20curso%201.png">
   </p>
+  <p align="center">
+  <img src= "https://raw.githubusercontent.com/sigutier/KeepCoding_Introduccion_a_la_programacion/master/contenido%20curso%202.png">
+  </p>
+  <p align="center">
+  <img src= "https://raw.githubusercontent.com/sigutier/KeepCoding_Introduccion_a_la_programacion/master/contenido%20curso%203.png">
+  </p>
   
