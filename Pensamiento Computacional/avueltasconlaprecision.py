@@ -12,39 +12,135 @@ Retos:
 2. Permitir que el programa tenga un número indeterminado de productos y cantidades de entrada.
 """
 
+# Restricciones y Reto 1:
+
 while True:
-    strprimerprecio = input("Primer precio: ")
+    strprecio1 = input("Primer precio: ")
     try:
-        primerprecio = float(strprimerprecio)
+        precio1 = float(strprecio1)
     except:
         print("Debes introducir un número.")
         continue
-    if primerprecio < 0:
+    if precio1 < 0:
         print("Debes introducir un número positivo.")
         continue
     break
 
 while True:
-    strsegundoprecio = input("Segundo precio: ")
+        strcant1 = input("Primera cantidad: ")
+        try:
+            cant1 = float(strcant1)
+        except:
+            print("Debes introducir un número.")
+            continue
+        if cant1 < 0:
+            print("Debes introducir un número positivo.")
+            continue
+        break
+
+while True:
+    strprecio2 = input("Segundo precio: ")
     try:
-        segundoprecio = float(strsegundoprecio)
+        precio2 = float(strprecio2)
     except:
         print("Debes introducir un número.")
         continue
-    if segundoprecio < 0:
+    if precio2 < 0:
         print("Debes introducir un número positivo.")
         continue
     break
 
 while True:
-    strtercerprecio = input("Tercer precio: ")
+    strcant2 = input("Segunda cantidad: ")
     try:
-        tercerprecio = float(strtercerprecio)
+        cant2 = float(strcant2)
     except:
         print("Debes introducir un número.")
         continue
-    if tercerprecio < 0:
+    if cant2 < 0:
         print("Debes introducir un número positivo.")
         continue
     break
 
+while True:
+    strprecio3 = input("Tercer precio: ")
+    try:
+        precio3 = float(strprecio3)
+    except:
+        print("Debes introducir un número.")
+        continue
+    if precio3 < 0:
+        print("Debes introducir un número positivo.")
+        continue
+    break
+
+while True:
+    strcant3 = input("Tercera cantidad: ")
+    try:
+        cant3 = float(strcant3)
+    except:
+        print("Debes introducir un número.")
+        continue
+    if cant3 < 0:
+        print("Debes introducir un número positivo.")
+        continue
+    break
+
+subtotal = 0
+subtotal += precio1*cant1
+subtotal += precio2*cant2
+subtotal += precio3*cant3
+
+tasa = subtotal * 0.055
+
+total = subtotal + tasa
+
+print("Subtotal: {}".format(subtotal))
+print("Tasas: {}".format(tasa))
+print("Total: {}".format(total))
+
+
+# Reto 2:
+
+lista_compras = []
+
+while True:
+    strprecio = input("Precio: ")
+    if strprecio == "":
+        break
+    try:
+        precio = float(strprecio)
+        if precio < 0:
+            print("Debes introducir un número positivo.")
+            continue
+        while True:
+            strcant = input("Cantidad: ")
+            try:
+                cant = float(strcant)
+                if cant < 0:
+                    print("Debes introducir un número positivo.")
+                    continue
+                compra = {'precio':precio, 'cantidad':cant}
+                lista_compras.append(compra)
+                break
+            except:
+                print("Debes introducir un número.")
+                continue
+    except:
+        print("Debes introducir un número.")
+        continue
+
+print(lista_compras)
+
+subtotal = 0
+for compra in lista_compras:
+    subtotal +=  compra['precio'] * compra['cantidad']
+
+
+tasa = subtotal * 0.055
+
+total = subtotal + tasa
+
+print("Subtotal: {}".format(subtotal))
+print("Tasas: {}".format(tasa))
+print("Total: {}".format(total))
