@@ -1,4 +1,4 @@
-# Curso de Introducción a la programación desde cero
+# Curso de Introducción a la Programación desde cero
 _Proyectos del primer curso del Bootcamp de Glovo Mujeres en Tech impartido por KeepCoding. Utilizando principalmente Python._
 
 
