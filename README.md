@@ -3,9 +3,10 @@ _Proyectos del primer curso del Bootcamp de Glovo Mujeres en Tech impartido por 
 
 ### Calendario del Bootcamp:
 ```
-https://github.com/sigutier/KeepCoding_Introduccion_a_la_programacion/blob/master/calendario%20bootcamp%20Glovo%20Mujeres%20en%20Tech.pdf
+![image](https://user-images.githubusercontent.com/98970694/188310676-ab8415f2-9dc0-491f-b436-21f9159604da.png)
+
 ```
-### Certificado Curso de Introducción a la Programación desde cero:
+### Contenido Curso de Introducción a la Programación desde cero:
 
   <p align="center">
   <img src= "https://raw.githubusercontent.com/sigutier/KeepCoding_Introduccion_a_la_programacion/master/contenido%20curso%201.png">
