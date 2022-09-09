@@ -10,26 +10,30 @@ Restricciones:
 - Hacer el programa sensible a mayúsculas - minúsculas
 
 Retos:
-1. Impide que la contraseña se vea. Investiga para ello
+1. Impide que la contraseña se vea. Investiga para ello.
 2. Utiliza un diccionario en lugar de una tupla de tuplas """
 
-usuarios = (
-    ("patata", "1234"),
-    ("tomate", "4567"),
-    ("manzana", "7890"),
-)
+import getpass
 
-strUser = input("User....: ")
-strPwd =  input("Password: ")
+users = [
+  {'user': "patata", 'password': "1234"},
+  {'user': "tomate", 'password': "4567"},
+  {'user': "manzana", 'password': "7890"}
+]
 
-ix = 0
-while ix < len(usuarios) and usuarios[ix][0] != strUser:
-  ix += 1
-    
-if ix == len(usuarios):
-  print("No te conozco, no pasas")
+str_user = input("User: ")
+str_pwd =  getpass.getpass("Password: ")
+
+is_user_present = False
+is_password_valid = False
+
+for user in users:
+  if user['user'] == str_user:
+    is_user_present = True
+    if user['password'] == str_pwd:
+      is_password_valid = True
+
+if is_user_present == True and is_password_valid == True:
+  print("Entró en el sistema")
 else:
-  if usuarios[ix][1] == strPwd:
-    print("Entró en el sistema")
-  else: 
-    print("No te conozco, no pasas")
+  print("No te conozco, no pasas")

@@ -14,82 +14,51 @@ Retos:
 
 # Restricciones y Reto 1:
 
-while True:
-    strprecio1 = input("Primer precio: ")
-    try:
-        precio1 = float(strprecio1)
-    except:
-        print("Debes introducir un número.")
-        continue
-    if precio1 < 0:
-        print("Debes introducir un número positivo.")
-        continue
-    break
-
-while True:
-        strcant1 = input("Primera cantidad: ")
+def ask_price(prefix_price = ""):
+    while True:
+        strprice = input(prefix_price + " precio: ")
         try:
-            cant1 = float(strcant1)
+            price = float(strprice)
         except:
             print("Debes introducir un número.")
             continue
-        if cant1 < 0:
+        if price < 0:
             print("Debes introducir un número positivo.")
             continue
         break
+    return price
 
-while True:
-    strprecio2 = input("Segundo precio: ")
-    try:
-        precio2 = float(strprecio2)
-    except:
-        print("Debes introducir un número.")
-        continue
-    if precio2 < 0:
-        print("Debes introducir un número positivo.")
-        continue
-    break
 
-while True:
-    strcant2 = input("Segunda cantidad: ")
-    try:
-        cant2 = float(strcant2)
-    except:
-        print("Debes introducir un número.")
-        continue
-    if cant2 < 0:
-        print("Debes introducir un número positivo.")
-        continue
-    break
+def ask_quantity(prefix_quantity = ""):
 
-while True:
-    strprecio3 = input("Tercer precio: ")
-    try:
-        precio3 = float(strprecio3)
-    except:
-        print("Debes introducir un número.")
-        continue
-    if precio3 < 0:
-        print("Debes introducir un número positivo.")
-        continue
-    break
+    while True:
+        str_quantity = input(prefix_quantity + " cantidad: ")
+        try:
+            quantity = float(str_quantity)
+        except:
+            print("Debes introducir un número.")
+            continue
+        if quantity < 0:
+            print("Debes introducir un número positivo.")
+            continue
+        break
+    return quantity
 
-while True:
-    strcant3 = input("Tercera cantidad: ")
-    try:
-        cant3 = float(strcant3)
-    except:
-        print("Debes introducir un número.")
-        continue
-    if cant3 < 0:
-        print("Debes introducir un número positivo.")
-        continue
-    break
+
+price1 = ask_price("Primer")
+quantity1 = ask_quantity("Primera")
+
+price2 = ask_price("Segundo")
+quantity2 = ask_quantity("Segunda")
+
+price3 = ask_price("Tercer")
+quantity3 = ask_quantity("Tercera")
+
 
 subtotal = 0
-subtotal += precio1*cant1
-subtotal += precio2*cant2
-subtotal += precio3*cant3
+subtotal += price1 * quantity1
+subtotal += price2 * quantity2
+subtotal += price3 * quantity3
 
 tasa = subtotal * 0.055
 
@@ -98,6 +67,7 @@ total = subtotal + tasa
 print("Subtotal: {}".format(subtotal))
 print("Tasas: {}".format(tasa))
 print("Total: {}".format(total))
+
 
 
 # Reto 2:

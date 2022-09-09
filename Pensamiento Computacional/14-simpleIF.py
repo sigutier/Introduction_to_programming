@@ -23,16 +23,20 @@ Restricciones:
 Retos:
 1. Permitir al usuario introducir su provincia en mayúsculas, minúsculas o mixto. """
 
-strPrecio =    input("Precio...: ")
-strProvincia = input("Provincia: ")
+# Restricciones y Reto:
 
-total = float(strPrecio)
-strTotal = ""
+from utils import ask_float
 
-if strProvincia == 'VA':
+precio = ask_float("Precio: ")
+str_provincia = input("Provincia: ").lower()
+
+total = precio
+str_total = ""
+
+if str_provincia == 'valencia':
   tasa = total * 0.055
-  strTotal = "El subtotal es {:.2f}€\nLa tasa es {:.2f}€\n".format(total, tasa)
+  str_total = "El subtotal es {:.2f}€\nLa tasa es {:.2f}€\n".format(total, tasa)
   total = total + tasa
 
-strTotal = strTotal + "El total es {:.2f}€".format(total)
-print(strTotal)
+str_total = str_total + "El total es {:.2f}€".format(total)
+print(str_total)
