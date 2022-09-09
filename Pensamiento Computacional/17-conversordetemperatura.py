@@ -16,7 +16,7 @@ Retos:
 1. Asegurar que las entradas son numéricas
 2. Modificar el programa para que acepte grados Kelvin """
 
-from utils import *
+from utils import ask_float
 
 mode = input("Temperatura de entrada en Fahrenheit o Celsius (F/C/K)").upper()
 temp = ask_float("Valor de la temperatura: ")
