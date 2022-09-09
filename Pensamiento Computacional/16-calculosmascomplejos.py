@@ -60,50 +60,27 @@ En otro caso se indicaría `Usted puede conducir`
 Restricciones:
 - Impedir la entrada de datos no numéricos. """
 
-
-def inputInt(msg):
-  val = ""
-  while val == "":
-    cad = input(msg)
-    try:
-      val = int(cad)
-    except:
-      val = ""
-
-  return val
-
-def inputFloat(msg):
-  val = ""
-  while val == "":
-    cad = input(msg)
-    try:
-      val = float(cad)
-    except:
-      val = ""
-
-  return val
-
+from utils import *
 
 strMas = "S"
 alcoholAbsoluto = 0
 while strMas == "S":
-  bebidas = inputInt("Número de bebidas: ")
-  volumen = inputInt("Volumen por bebida en cc: ")
-  grado = inputFloat("Grado alcohólico: ")
+  bebidas = ask_int("Número de bebidas: ")
+  volumen = ask_int("Volumen por bebida en cc: ")
+  grado = ask_float("Grado alcohólico: ")
   
   alcoholAbsoluto += bebidas * volumen * grado * 0.8 / 100
   
-  strMas = input("Otra bebida(S/N) ")
+  strMas = input("\nOtra bebida(S/N) ").upper()
   
 UBE = alcoholAbsoluto / 10
-horas = inputFloat("Horas transcurridas: ")
+horas = ask_float("\nHoras transcurridas: ")
 
 BAC = UBE*0.3 - horas * 0.15
 
-print("Alcohol en sangre: {} g/l".format(BAC))
+print("\nAlcohol en sangre: {:.3f} g/l".format(BAC))
 print("El máximo permitido es 0.5 g/l")
 if BAC > 0.5:
-  print("Usted no puede conducir")
+  print("\nUsted no puede conducir")
 else:
-  print("Usted puede conducir")
-
+  print("\nUsted puede conducir")
