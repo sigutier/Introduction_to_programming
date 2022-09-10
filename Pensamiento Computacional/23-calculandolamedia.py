@@ -22,6 +22,7 @@ while True:
     else:
         is_first = False
         if number == 0:
+            print("\nResultado")
             break
         else:
             list_numbers.append(number)
