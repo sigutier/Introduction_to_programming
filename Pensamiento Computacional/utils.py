@@ -54,4 +54,12 @@ def get_max(list):
     if list[i] > max:
       max = list[i]
   return max
-  
+
+def compute_mean(list):
+    sum = 0
+    mean = 0
+    for i in range(0, len(list)):
+        sum += list[i]
+        
+    mean = sum / len(list)
+    return mean
