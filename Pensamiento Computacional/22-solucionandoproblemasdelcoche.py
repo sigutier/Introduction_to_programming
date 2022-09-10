@@ -45,8 +45,7 @@ else:
 print("Entonces:\n", solucion)
 
 
-## Reto:
-# Investigar sobre árboles de decisión y como codificarlo sin hacerlo a capón como arriba
+# Reto: Investigar sobre árboles de decisión y como codificarlo sin hacerlo a capón como arriba
 class Node:
   def __init__(self, message: str, si = None, no = None):
     self.si = si
