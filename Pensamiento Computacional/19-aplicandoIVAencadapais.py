@@ -52,4 +52,4 @@ else:
   
 total = precio + iva
 
-print("Base: {:0.2f}€\nIVA: {}% - {:0.2f}€\nTotal: {:0.2f}€".format(precio, ivas[pais], iva, total) if ivas.get(pais) else "País no conocido")
+print("Base: {:0.2f}€\nIVA: {}% - {:0.2f}€\nTotal: {:0.2f}€".format(precio, ivas[pais], iva, total) if ivas.get(pais) else "País desconocido")
