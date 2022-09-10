@@ -41,5 +41,26 @@ else:
 print("El mayor es: {}".format(max))
 
 # Retos
+list_numbers = []
+while True:
+  str_num = input("Escribe un número: ")
+  if str_num == "":
+    break
+  try:
+    num = int(str_num)
+    list_numbers.append(num)
+  except:
+    print("Debes introducir un número.")
+    continue
 
-num = ask_int_negative_included("Escribe un número: ")
+print(list_numbers)
+
+def get_max(list):
+  max = list[0]
+  for i in range (1, len(list)):
+    if list[i] > max:
+      max = list[i]
+  return max
+
+maximum = get_max(list_numbers)
+print("El mayor es: {}".format(maximum))
