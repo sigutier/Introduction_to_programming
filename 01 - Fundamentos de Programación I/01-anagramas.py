@@ -42,8 +42,8 @@ else:
     print(f"{cadena1} NO es anagrama de {cadena2}")
 
 # Solicitar al usuario las cadenas
-cadena1 = input("Ingresa una cadena: ")
-cadena2 = input("Ingresa otra cadena: ")
+cadena1 = input("Primera palabra: ")
+cadena2 = input("Segunda palabra: ")
 es_anagrama = esAnagrama(cadena1, cadena2)
 if es_anagrama:
     print(f"{cadena1} es anagrama de {cadena2}")
