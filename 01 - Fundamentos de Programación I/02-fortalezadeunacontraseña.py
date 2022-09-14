@@ -14,16 +14,16 @@ Restricciones:
 
 import re
 
-# muy debil
-def es_muy_debil(password):
+# muy débil
+def is_very_weak(password):
     pattern = re.compile('^[0-9]{0,8}$')
     if pattern.match(password) != None:
         return True
     else: 
         return False
 
-# debil
-def es_debil(password):
+# débil
+def is_weak(password):
     pattern = re.compile('^[a-zA-Z]{0,8}$')
     if pattern.match(password) != None:
         return True
@@ -31,7 +31,7 @@ def es_debil(password):
         return False
 
 # fuerte
-def es_fuerte(password):
+def is_strong(password):
     pattern = re.compile("^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$")
     if pattern.match(password) != None:
         return True
@@ -39,24 +39,22 @@ def es_fuerte(password):
         return False
 
 # muy fuerte
-def es_muy_fuerte(password):
+def is_very_strong(password):
     pattern = re.compile("^(?=.*[A-Za-z])(?=.*\d)(?=.*[\W_])[A-Za-z\d\W_]{8,}$")
     if pattern.match(password) != None:
         return True
     else: 
         return False
 
-
 def validaPwd(password):
-    if es_muy_debil(password):
-        print("Contraseña muy debil")
-    elif es_debil(password):
-        print("Contraseña debil")
-    elif es_fuerte(password):
-        print("Contraseña fuerte")
-    elif es_muy_fuerte(password):
-        print("Contraseña muy fuerte")
-
+    if is_very_weak(password):
+        print("Your password is very weak.")
+    elif is_weak(password):
+        print("Your password is weak.")
+    elif is_strong(password):
+        print("Your password is strong.")
+    elif is_very_strong(password):
+        print("Your password is very strong.")
 
 input_password = input("Enter your password: ")
 validaPwd(input_password)
