@@ -14,7 +14,6 @@ Restricciones:
 
 import re
 
-# muy débil
 def is_very_weak(password):
     pattern = re.compile('^[0-9]{0,8}$')
     if pattern.match(password) != None:
@@ -22,7 +21,6 @@ def is_very_weak(password):
     else: 
         return False
 
-# débil
 def is_weak(password):
     pattern = re.compile('^[a-zA-Z]{0,8}$')
     if pattern.match(password) != None:
@@ -30,7 +28,6 @@ def is_weak(password):
     else: 
         return False
 
-# fuerte
 def is_strong(password):
     pattern = re.compile("^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$")
     if pattern.match(password) != None:
@@ -38,7 +35,6 @@ def is_strong(password):
     else: 
         return False
 
-# muy fuerte
 def is_very_strong(password):
     pattern = re.compile("^(?=.*[A-Za-z])(?=.*\d)(?=.*[\W_])[A-Za-z\d\W_]{8,}$")
     if pattern.match(password) != None:
@@ -46,7 +42,7 @@ def is_very_strong(password):
     else: 
         return False
 
-def validaPwd(password):
+def validate_pwd(password):
     if is_very_weak(password):
         print("Your password is very weak.")
     elif is_weak(password):
@@ -57,4 +53,4 @@ def validaPwd(password):
         print("Your password is very strong.")
 
 input_password = input("Enter your password: ")
-validaPwd(input_password)
+validate_pwd(input_password)

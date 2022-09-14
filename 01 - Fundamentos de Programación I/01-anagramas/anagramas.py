@@ -16,7 +16,7 @@ Restricciones:
 Reto:
 1. Hacerlo sin las facilidades de manejo de cadenas de python """
 
-def esAnagrama(palabra1, palabra2):
+def is_anagram(palabra1, palabra2):
     # Convertimos ambas a minúsculas
     palabra1 = palabra1.lower()
     palabra2 = palabra2.lower()
@@ -35,7 +35,7 @@ def esAnagrama(palabra1, palabra2):
 
 cadena1 = "Nacionalista"
 cadena2 = "Altisonancia"
-es_anagrama = esAnagrama(cadena1, cadena2)
+es_anagrama = is_anagram(cadena1, cadena2)
 if es_anagrama:
     print(f"{cadena1} es anagrama de {cadena2}")
 else:
@@ -44,7 +44,7 @@ else:
 # Solicitar al usuario las cadenas
 cadena1 = input("Primera palabra: ")
 cadena2 = input("Segunda palabra: ")
-es_anagrama = esAnagrama(cadena1, cadena2)
+es_anagrama = is_anagram(cadena1, cadena2)
 if es_anagrama:
     print(f"{cadena1} es anagrama de {cadena2}")
 else:
