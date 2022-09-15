@@ -12,11 +12,11 @@
 - Validar que el parámetro sea del tipa adecuado y si no lo es gestionar el error sin que se produzca una excepción. 
 Para comprobar si una variable es del tipo esperado utilizar [isinstance](https://docs.python.org/3/library/functions.html) """
 
-def my_lower(str):
-    if isinstance(str, str) == False:
+def my_lower(string):
+    if isinstance(string, str) == False:
         raise Exception('The "string" parameter is not be of type str')
     result = ""
-    for char in str:
+    for char in string:
         if ord(char) >= 192 and ord(char) <= 222: # mayusculas con tildes, diéresis, etc
             result += chr(ord(char)+32)
         elif ord(char) >= 65 and ord(char) <= 90: # mayusculas
