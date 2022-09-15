@@ -24,3 +24,7 @@ def my_lower(string):
         else:
             result += char
     return result
+
+if __name__ == '__main__':
+    input_str = input("Introduce texto: ")
+    print(my_lower(input_str))
