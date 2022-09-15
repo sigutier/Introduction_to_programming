@@ -13,6 +13,8 @@
 Para comprobar si una variable es del tipo esperado utilizar [isinstance](https://docs.python.org/3/library/functions.html) """
 
 def my_lower(str):
+    if isinstance(str, str) == False:
+        raise Exception('The "string" parameter is not be of type str')
     result = ""
     for char in str:
         if ord(char) >= 192 and ord(char) <= 222: # mayusculas con tildes, diéresis, etc

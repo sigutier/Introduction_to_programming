@@ -18,7 +18,6 @@ def center(string, width):
         raise Exception('The "string" parameter is not be of type str')
     if isinstance(width, int) == False:
         raise Exception('The "width" parameter is not be of type int')
-    
     spaces = (width - len(string)) // 2
     result = spaces * " " + string
 
