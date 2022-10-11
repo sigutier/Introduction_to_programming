@@ -1,8 +1,13 @@
-# Curso de Introducción a la Programación desde cero
-_Proyectos del primer curso del Bootcamp de Glovo Mujeres en Tech impartido por KeepCoding. Utilizando principalmente Python._
+<h1 align="center">
+	Introduction to Programming
+</h1>
+<p align="center">
+	<b><i>Projects from the first course of the Glovo Bootcamp 'Women in Tech' taught by KeepCoding. Using mainly Python.</i></b><br>
+</p>
 
+---
 
-### Contenido del curso:
+### Course content:
 
   <p align="center">
   <img src= "https://raw.githubusercontent.com/sigutier/KeepCoding_Introduccion_a_la_programacion/master/img/contenido%20curso%201.png">
@@ -12,7 +17,7 @@ _Proyectos del primer curso del Bootcamp de Glovo Mujeres en Tech impartido por 
 
 <br>
 
-### Certificado del curso:
+### Course certificate:
 
  <p align="center">
   <img src= "https://raw.githubusercontent.com/sigutier/KeepCoding_Introduccion_a_la_programacion/master/img/Certificado%20curso.png">
