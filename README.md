@@ -1,5 +1,5 @@
 <h1 align="center">
-	Introduction to Programming
+	:construction: Introduction to Programming
 </h1>
 <p align="center">
 	<b><i>Projects from the first course of the Glovo Bootcamp 'Women in Tech' taught by KeepCoding. Using mainly Python.</i></b><br>
@@ -7,7 +7,7 @@
 
 ---
 
-### Course content:
+### :file_folder: Course content:
 
   <p align="center">
   <img src= "https://raw.githubusercontent.com/sigutier/KeepCoding_Introduccion_a_la_programacion/master/img/contenido%20curso%201.png">
@@ -17,7 +17,7 @@
 
 <br>
 
-### Course certificate:
+### :checkered_flag: Course certificate:
 
  <p align="center">
   <img src= "https://raw.githubusercontent.com/sigutier/KeepCoding_Introduccion_a_la_programacion/master/img/Certificado%20curso.png">
